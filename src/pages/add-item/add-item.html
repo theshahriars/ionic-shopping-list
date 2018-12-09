@@ -4,7 +4,23 @@
     </ion-navbar>
 </ion-header>
 
-
 <ion-content padding>
+
+    <ion-item style="padding: 0;">
+        <ion-label fixed>Name</ion-label>
+        <ion-input [(ngModel)]="item.name" type="text"></ion-input>
+    </ion-item>
+
+    <ion-item style="padding: 0;">
+        <ion-label fixed>Price</ion-label>
+        <ion-input [(ngModel)]="item.price" type="text"></ion-input>
+    </ion-item>
+
+    <ion-item style="padding: 0;">
+        <ion-label fixed>Quantity</ion-label>
+        <ion-input [(ngModel)]="item.quantity" type="text"></ion-input>
+    </ion-item>
+
+    <button ion-button color="danger" full clear style="margin-top: 15px;">Save Item</button>
 
 </ion-content>
