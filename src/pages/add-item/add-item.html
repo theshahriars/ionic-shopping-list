@@ -21,6 +21,6 @@
         <ion-input [(ngModel)]="item.quantity" type="text"></ion-input>
     </ion-item>
 
-    <button ion-button color="danger" full clear style="margin-top: 15px;">Save Item</button>
+    <button (click)="addItem(item)" ion-button color="danger" full clear style="margin-top: 15px;">Save Item</button>
 
 </ion-content>
