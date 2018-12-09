@@ -5,7 +5,7 @@ import {SplashScreen} from '@ionic-native/splash-screen';
 import {StatusBar} from '@ionic-native/status-bar';
 import {AngularFireModule} from 'angularfire2';
 import {AngularFireDatabaseModule} from 'angularfire2/database';
-import {FIREBASE_CONFIG} from "./firebase.config";
+import {FIREBASE_CONFIG} from "../config/firebase";
 
 import {MyApp} from './app.component';
 
