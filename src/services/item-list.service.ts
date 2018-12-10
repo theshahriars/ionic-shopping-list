@@ -1,13 +1,14 @@
 import {Injectable} from "@angular/core";
-import {AngularFireDatabase} from "angularfire2/database";
+import {AngularFireDatabase, AngularFireList} from "angularfire2/database";
 import {Item} from "../models/item.model";
 
 @Injectable()
 export class ItemListService {
 
-    private shoppingListRef = this.db.list<Item>('ionic-shopping-list');
+    shoppingListRef:AngularFireList<Item>;
 
     constructor(private db: AngularFireDatabase) {
+        this.shoppingListRef = this.db.list<Item>('ionic-shopping-list');
     }
 
     getItem() {

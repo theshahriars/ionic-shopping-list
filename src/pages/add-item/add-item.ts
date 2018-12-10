@@ -29,7 +29,7 @@ export class AddItemPage {
 
     addItem(item: Item) {
         this.itemList.addItem(item).then(res => {
-            console.log(res.key);
+            this.navCtrl.popTo('HomePage')
         });
     }
 
